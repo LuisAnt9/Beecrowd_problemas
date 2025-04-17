@@ -6,12 +6,22 @@ public class B1159 {
 
         int x = entrada.nextInt();
 
-        if (x % 2 == 0) {
-            for (int i = x; i < x + 5 ; i++) {
-                System.out.println(i);
-            }
-        }
+        while (x != 0) {
+            int soma = 0;
+            int contador = 0;
 
+            if (x % 2 != 0) {
+                x++;
+            }
+
+            for (int i = x; contador < 5; i += 2) {
+                soma += i;
+                contador++;
+            }
+
+            System.out.println(soma);
+            x = entrada.nextInt();
+        }
         entrada.close();
     }
 }
