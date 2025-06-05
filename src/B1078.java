@@ -5,8 +5,8 @@ public class B1078 {
         Scanner scanner = new Scanner(System.in);
 
         int N = scanner.nextInt();
-        for(int i = 1; i <= 10; i++) {
-             int soma = i * N;
+        for (int i = 1; i <= 10; i++) {
+            int soma = i * N;
             System.out.println(i + " x " + N + " = " + soma);
         }
 
